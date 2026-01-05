@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+figure{
+    object-fit: cover;
+    margin: 0;
+}
+.container{
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ==================== topbar start */
+.topbar{
+    padding: 20px 0;
+}
+.topbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.topbar-wrapper ul, .topbar-left ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topbar-left ul li{
+    flex-wrap: wrap;
+}
+.topbar-left ul li:not(:last-child){
+    margin-right: 24px;
+}
+.topbar-left ul li i:not(:last-child){
+    margin-right: 10px;
+}
+.topbar-right ul li:not(:last-child){
+    margin-right: 15px;
+}
