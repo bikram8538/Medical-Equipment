@@ -1,3 +1,4 @@
+// Top Quality Swiper Start
 var swiper = new Swiper(".medical-sol-swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -20,7 +21,9 @@ var swiper = new Swiper(".medical-sol-swiper", {
   },
   loop: "true",
 });
+// Top Quality Swiper End
 
+// Top Equipment Swiper Start
 var swiper = new Swiper(".eqi-swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -43,3 +46,17 @@ var swiper = new Swiper(".eqi-swiper", {
   },
   loop: "true",
 });
+// Top Equipment Swiper End
+
+// Accodian Our Partner Start
+const accordionItems = document.querySelectorAll(".accordion-item");
+
+accordionItems.forEach((item) => {
+  const header = item.querySelector(".accordion-header");
+
+  header.addEventListener("click", () => {
+    accordionItems.forEach((i) => i.classList.remove("active"));
+    item.classList.toggle("active");
+  });
+});
+// Accodian Our Partner End
