@@ -51,4 +51,7 @@
     .eqi-card-cnt > div:last-child a{
         margin-bottom: 24px;
     }
+    .banner-image{
+        filter: blur(12px);
+    }
 }
