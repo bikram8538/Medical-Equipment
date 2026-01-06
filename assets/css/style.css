@@ -199,6 +199,7 @@ section {
   line-height: var(--lh-166);
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls-01);
+  margin-bottom: 24px;
 }
 h2 {
   font-size: var(--fs-55);
@@ -391,7 +392,7 @@ h1 span {
 }
 
 .medical-sol-card-wrapper {
-  padding: 60px 12px 0;
+  padding: 60px 0px 0;
   position: relative;
 }
 .medical-sol-card {
@@ -401,8 +402,6 @@ h1 span {
   text-align: center;
   text-transform: capitalize;
   color: var(--clr-white-100);
-  max-width: 360px;
-  width: 100%;
   margin: 0 auto;
 }
 .icon-ring {
@@ -636,9 +635,9 @@ h1 span {
   flex-direction: column;
   justify-content: space-between;
 }
-/* .accordion > div:not(:last-child) {
+.accordion > div:not(:last-child) {
   margin-bottom: 24px;
-} */
+}
 .accordion-item {
   background: var(--clr-lightblue-900);
   border-radius: 15px;
@@ -932,6 +931,7 @@ h1 span {
   line-height: var(--lh-120);
   font-weight: var(--fw-bold);
   color: var(--clr-white-100);
+  text-align: center;
 }
 .newsletter input[type="email"] {
   padding: 24px 50px;

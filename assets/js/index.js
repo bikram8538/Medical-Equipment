@@ -1,3 +1,13 @@
+// Nav Toggler Start
+const navToggle = document.querySelector(".nav-toggle");
+const navCollapse = document.querySelector(".nav-collapse");
+
+navToggle.addEventListener("click", () => {
+  navToggle.classList.toggle("active");
+  navCollapse.classList.toggle("active");
+});
+// Nav Toggler End
+
 // Top Quality Swiper Start
 var swiper = new Swiper(".medical-sol-swiper", {
   slidesPerView: 4,
@@ -15,7 +25,7 @@ var swiper = new Swiper(".medical-sol-swiper", {
 
   breakpoints: {
     1200: { slidesPerView: 4 },
-    992: { slidesPerView: 3 },
+    992: { slidesPerView: 2 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
   },

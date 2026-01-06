@@ -1,0 +1,54 @@
+@media screen and (max-width: 991px) {
+  .col-lg-50 {
+    width: 50%;
+  }
+  .col-lg-100 {
+    width: 100%;
+  }
+  .sec-content{
+    justify-content: center;
+    text-align: center;
+  }
+  .sec-description{
+    margin: 24px auto;
+  }
+
+  .about-media {
+    margin: 0 auto 24px;
+    width: fit-content;
+  }
+  .accordion > div {
+    margin-bottom: 24px;
+  }
+  .ftr-cnt {
+    margin: 24px 0;
+    text-align: center;
+  }
+  .ftr-des {
+    margin: 24px auto;
+  }
+  .ftr-socials {
+    justify-content: center;
+  }
+  .ftr-cnt ul li a {
+    justify-content: center;
+  }
+  .blog-swiper-btns{
+    max-width: 100%;
+  }
+  .newsletter form{
+    flex-direction: column;
+  }
+  .newsletter form > div:last-child{
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 768px){
+    .eqi-card-cnt > div:last-child{
+        flex-direction: column;
+    }
+    .eqi-card-cnt > div:last-child a{
+        margin-bottom: 24px;
+    }
+}
