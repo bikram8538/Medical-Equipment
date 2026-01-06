@@ -1,0 +1,20 @@
+@media (max-width: 1199px) {
+  .medical-sol-card {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 767px) {
+  .medical-sol-card {
+    max-width: 100%;
+  }
+
+  .icon-ring {
+    width: 100px;
+    height: 100px;
+  }
+
+  .medical-sol-card h3 {
+    font-size: 22px;
+  }
+}

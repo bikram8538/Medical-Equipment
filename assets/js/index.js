@@ -60,3 +60,52 @@ accordionItems.forEach((item) => {
   });
 });
 // Accodian Our Partner End
+
+// Blog Card Swiper Start
+var swiper = new Swiper(".blog-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".blog-swiper-next",
+    prevEl: ".blog-swiper-prev",
+  },
+
+  breakpoints: {
+    1200: { slidesPerView: 3 },
+    992: { slidesPerView: 2 },
+    768: { slidesPerView: 2 },
+    480: { slidesPerView: 1 },
+  },
+  loop: "true",
+});
+// Blog Card Swiper End
+// Our Team Start
+var swiper = new Swiper(".team-swiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".team-swiper-next",
+    prevEl: ".team-swiper-prev",
+  },
+
+  breakpoints: {
+    1200: { slidesPerView: 4 },
+    992: { slidesPerView: 2 },
+    768: { slidesPerView: 2 },
+    480: { slidesPerView: 1 },
+  },
+  loop: "true",
+});
+// Our Team End

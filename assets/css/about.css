@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  .about-layout > .row {
+    flex-direction: column;
+  }
+
+  .about-media {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-card {
+    min-height: auto;
+  }
+
+  .about-card h3 {
+    font-size: 22px;
+  }
+}
