@@ -473,6 +473,7 @@ h1 span {
 
 
 /* About us */
+
 .about-us .sec-cnt-lt{
   max-width: 700px;
   width: 100%;
@@ -480,7 +481,7 @@ h1 span {
 .about-layout{
   margin-top: 60px;
 }
-.about-layout .row{
+.about-layout > .row{
   align-items: center;
 }
 .about-media{
@@ -490,12 +491,14 @@ h1 span {
   padding: 24px;
   border-radius: 32px;
   background: var(--clr-lightblue-900);
-  height: 267px;
+  min-height: 267px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
   margin: 12px 0;
+  white-space: inherit;
 }
 .about-card > *:not(:last-child){
   margin-bottom: 10px;
@@ -512,4 +515,96 @@ h1 span {
 }
 .about-btn{
   margin-top: 30px;
+}
+
+/* =============== Equipment Swiper */
+.eqi-swiper-btns{
+  margin-left: auto;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+.eqi-swiper-btns > div{
+  height: 70px;
+  width: 70px;
+  background: var(--clr-button-900);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--clr-blue-480);
+  cursor: pointer;
+}
+.eqi-swiper-btns > div:first-child{
+  margin-right: 10px;
+}
+
+.eqi-card{
+  background: radial-gradient( rgba(111, 81, 199, 0.7),rgba(53, 184, 192, 0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 30px;
+  border-radius: 15px;
+}
+.eqi-card figure{
+  margin-bottom: 40px;
+}
+.eqi-card-cnt > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eqi-card-cnt > div:first-child{
+  margin-bottom: 30px;
+}
+.eqi-card-cnt-top h3{
+  font-size: var(--fs-28);  
+  font-weight: var(--fw-medium);
+  color: var(--clr-white-100);
+  text-transform: capitalize;
+}
+.eqi-card-cnt-top p i{
+  margin-right: 10px;
+}
+.eqi-card-cnt-top p{
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs-28);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-127);
+  color: var(--clr-white-100);
+}
+.eqi-cart-btn {
+  padding: 10px 30px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 47px;
+  border: 1px solid transparent;
+  color: var(--clr-blue-480);
+  background: var(--clr-white-100);
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.eqi-cart-btn svg {
+  fill: var(--clr-blue-480);
+  margin-left: 10px;
+  transition: fill 0.3s ease;
+}
+.eqi-cart-btn:hover{
+  color: var(--clr-white-100);
+  background: var(--clr-blue-480);
+  border-color: var(--clr-white-100);
+}
+.eqi-cart-btn:hover svg{
+  fill: var(--clr-white-100);
+}
+.eqi-details-btn{
+  font-size: var(--fs-20);
+  line-height: var(--lh-170);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--clr-white-100);
+  color: var(--clr-white-100);
+  transition: opacity 0.3s ease;
+}
+.eqi-details-btn:hover{
+  opacity: 0.8;
 }
