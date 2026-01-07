@@ -64,6 +64,9 @@
   .about-layout > .row > .col:first-of-type{
     display: none;
   }
+  .our-partners .row > .col:last-of-type{
+    display: none;
+  }
   .about-media {
     margin: 0 auto 24px;
     width: fit-content;
@@ -142,6 +145,11 @@
   }
   .sec-btns > a:first-child {
     margin-bottom: 16px;
+  }
+}
+@media (max-width: 425px) {
+  body{
+    background: red;
   }
 }
 @media (max-width: 360px) {
