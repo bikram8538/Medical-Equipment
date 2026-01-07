@@ -24,10 +24,11 @@ var swiper = new Swiper(".medical-sol-swiper", {
   },
 
   breakpoints: {
-    1200: { slidesPerView: 4 },
+    1200: { slidesPerView: 3 },
     992: { slidesPerView: 2 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
+    320: { slidesPerView: 1 },
   },
   loop: "true",
 });
@@ -53,6 +54,7 @@ var swiper = new Swiper(".eqi-swiper", {
     992: { slidesPerView: 2 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
+    320: { slidesPerView: 1 },
   },
   loop: "true",
 });
@@ -91,6 +93,7 @@ var swiper = new Swiper(".blog-swiper", {
     992: { slidesPerView: 2 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
+    320: { slidesPerView: 1 },
   },
   loop: "true",
 });
@@ -115,6 +118,7 @@ var swiper = new Swiper(".team-swiper", {
     992: { slidesPerView: 2 },
     768: { slidesPerView: 2 },
     480: { slidesPerView: 1 },
+    320: { slidesPerView: 1 },
   },
   loop: "true",
 });

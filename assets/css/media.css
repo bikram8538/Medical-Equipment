@@ -1,15 +1,40 @@
+@media (max-width: 1199px) {
+  :root {
+    --fs-15: 14px;
+    --fs-18: 16px;
+    --fs-20: 18px;
+    --fs-24: 22px;
+    --fs-28: 26px;
+    --fs-30: 28px;
+    --fs-46: 42px;
+    --fs-55: 50px;
+    --fs-86: 78px;
+  }
+}
+
 @media screen and (max-width: 991px) {
+  :root {
+    --fs-15: 14px;
+    --fs-18: 16px;
+    --fs-20: 17px;
+    --fs-24: 21px;
+    --fs-28: 24px;
+    --fs-30: 26px;
+    --fs-46: 38px;
+    --fs-55: 44px;
+    --fs-86: 64px;
+  }
   .col-lg-50 {
     width: 50%;
   }
   .col-lg-100 {
     width: 100%;
   }
-  .sec-content{
+  .sec-content {
     justify-content: center;
     text-align: center;
   }
-  .sec-description{
+  .sec-description {
     margin: 24px auto;
   }
 
@@ -33,25 +58,81 @@
   .ftr-cnt ul li a {
     justify-content: center;
   }
-  .blog-swiper-btns{
+  .blog-swiper-btns {
     max-width: 100%;
   }
-  .newsletter form{
+  .newsletter form {
     flex-direction: column;
   }
-  .newsletter form > div:last-child{
+  .newsletter form > div:last-child {
     margin-top: 24px;
   }
 }
 
-@media screen and (max-width: 768px){
-    .eqi-card-cnt > div:last-child{
-        flex-direction: column;
-    }
-    .eqi-card-cnt > div:last-child a{
-        margin-bottom: 24px;
-    }
-    .banner-image{
-        filter: blur(12px);
-    }
+@media screen and (max-width: 768px) {
+  :root {
+    --fs-15: 13px;
+    --fs-18: 15px;
+    --fs-20: 16px;
+    --fs-24: 20px;
+    --fs-28: 22px;
+    --fs-30: 24px;
+    --fs-46: 32px;
+    --fs-55: 38px;
+    --fs-86: 48px;
+  }
+  .eqi-card-cnt > div:last-child {
+    flex-direction: column;
+  }
+  .eqi-card-cnt > div:last-child a {
+    margin-bottom: 24px;
+  }
+  .banner-image {
+    filter: blur(12px);
+  }
+}
+@media (max-width: 575px) {
+  :root {
+    --fs-15: 12px;
+    --fs-18: 14px;
+    --fs-20: 15px;
+    --fs-24: 18px;
+    --fs-28: 20px;
+    --fs-30: 22px;
+    --fs-46: 28px;
+    --fs-55: 32px;
+    --fs-86: 40px;
+  }
+  .col-sm-100{
+    width: 100%;
+  }
+  .sec-btns{
+    flex-direction: column;
+  }
+  .sec-btns > a{
+    text-align: center;
+  }
+  .sec-btns > a:first-child{
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 360px) {
+  :root {
+    --fs-15: 12px;
+    --fs-18: 13px;
+    --fs-20: 14px;
+    --fs-24: 17px;
+    --fs-28: 19px;
+    --fs-30: 20px;
+    --fs-46: 24px;
+    --fs-55: 28px;
+    --fs-86: 34px;
+  }
+  .blog-swiper-btns{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .blog-swiper-btns > div:first-child{
+    margin-bottom: 16px;
+  }
 }
