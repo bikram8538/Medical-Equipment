@@ -51,6 +51,8 @@
   --ff-montserrat: "Montserrat", sans-serif;
 
   --m10: clamp(6px, 1vw, 10px);
+  --s24: clamp(14px, 2vw, 24px);
+  --s50: clamp(20px, 4vw, 50px);
 
   --btn-main-ypad: clamp(12px, 1.2vw, 18px);
   --btn-main-xpad: clamp(24px, 3vw, 50px);
@@ -325,7 +327,6 @@ header hr {
 .banner {
   position: relative;
   overflow: hidden;
-  /* min-height: 1120px; */
   height: auto;
   display: flex;
   justify-content: center;
@@ -359,11 +360,9 @@ h1 span {
   width: 100%;
   font-size: var(--fs-24);
   line-height: var(--lh-170);
-  margin: 40px 0 0;
+  margin: 40px 0;
 }
-.banner-btn {
-  margin: 60px 0 0;
-}
+
 .banner-btn ul {
   display: flex;
   justify-content: space-between;
@@ -382,7 +381,6 @@ h1 span {
 .banner-stats ul {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 .banner-stats ul li {
@@ -881,7 +879,7 @@ h1 span {
   margin-right: 24px;
 }
 .newsletter input[type="email"] {
-  padding: 24px 50px;
+  padding: var(--s24) var(--s50);
   border-radius: 52px;
   border: none;
   outline: none;
