@@ -887,7 +887,10 @@ h1 span {
   outline: none;
   width: 100%;
 }
-
+.input-btn{
+  max-width: 520px;
+  width: 100%;
+}
 .input-submit .btn {
   white-space: nowrap;
 }
