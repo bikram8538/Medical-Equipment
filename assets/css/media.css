@@ -44,7 +44,7 @@
   
   .banner-description {
     margin: 40px auto 0;
-    max-width: 80%;
+    max-width: 95%;
   }
   .banner-btn {
     margin: 60px auto 0;
@@ -59,7 +59,7 @@
   }
   .sec-description {
     margin: 24px auto;
-    max-width: 80%;
+    max-width: 95%;
   }
   .about-layout > .row > .col:first-of-type{
     display: none;
@@ -150,6 +150,21 @@
 @media (max-width: 425px) {
   body{
     background: red;
+  }
+  .banner-stats ul li:nth-child(1), .banner-stats ul li:nth-child(3){
+    margin-right: 0;
+  }
+  .banner-stats ul li{
+    width: 50%;
+  }
+  .banner-btn{
+    width: 100%;
+  }
+  .banner-btn ul{
+    width: 100%;
+  }
+  .banner-btn ul li:first-of-type{
+    margin-right: 0;
   }
 }
 @media (max-width: 360px) {
