@@ -30,7 +30,7 @@
   .col-lg-100 {
     width: 100%;
   }
-  .banner-image{
+  .banner-image {
     transform: scale(1.3);
     bottom: 0;
     right: 0;
@@ -41,7 +41,7 @@
     justify-content: center;
     z-index: 2;
   }
-  
+
   .banner-description {
     margin: 40px auto 0;
     max-width: 95%;
@@ -61,10 +61,10 @@
     margin: 24px auto;
     max-width: 95%;
   }
-  .about-layout > .row > .col:first-of-type{
+  .about-layout > .row > .col:first-of-type {
     display: none;
   }
-  .our-partners .row > .col:last-of-type{
+  .our-partners .row > .col:last-of-type {
     display: none;
   }
   .about-media {
@@ -121,6 +121,17 @@
   .col-md-100 {
     width: 100%;
   }
+  .medical-sol-card {
+    padding-top: 70px;
+  }
+  .icon-ring {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 0 12px var(--clr-white-100);
+  }
+  .icon-ring img{
+    width: 35px;
+  }
 }
 @media (max-width: 575px) {
   :root {
@@ -146,24 +157,42 @@
   .sec-btns > a:first-child {
     margin-bottom: 16px;
   }
-}
-@media (max-width: 425px) {
+  .about-card {
+    min-height: auto;
+  }
+  .medical-sol-card-wrapper{
+    padding-top: 40px;
+  }
+  .medical-sol-card {
+    padding-top: 60px;
+    min-height: 280px;
+  }
+  .icon-ring {
+    width: 72px;
+    height: 72px;
+  }
   body{
     background: red;
   }
-  .banner-stats ul li:nth-child(1), .banner-stats ul li:nth-child(3){
+}
+@media (max-width: 425px) {
+  body {
+    background: red;
+  }
+  .banner-stats ul li:nth-child(1),
+  .banner-stats ul li:nth-child(3) {
     margin-right: 0;
   }
-  .banner-stats ul li{
+  .banner-stats ul li {
     width: 50%;
   }
-  .banner-btn{
+  .banner-btn {
     width: 100%;
   }
-  .banner-btn ul{
+  .banner-btn ul {
     width: 100%;
   }
-  .banner-btn ul li:first-of-type{
+  .banner-btn ul li:first-of-type {
     margin-right: 0;
   }
 }
