@@ -1,3 +1,68 @@
+
+/* Navbar */
+.navbar {
+  padding: 20px 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+nav ul li:not(:last-child) {
+  margin-right: 10px;
+}
+.nav-collapse {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-collapse div:first-child {
+  margin-right: 40px;
+}
+.nav-links ul li {
+  position: relative;
+}
+.nav-links ul li a {
+  font-size: var(--fs-18);
+  font-weight: var(--fw-semibold);
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--clr-blue-480);
+  transition: width 0.3s ease;
+}
+.nav-links ul li:hover:after {
+  width: 100%;
+}
+.nav-links ul li:hover a {
+  color: var(--clr-blue-480);
+}
+
+.nav-button ul li svg {
+  fill: var(--clr-black-000);
+  transition: fill 0.3s ease;
+}
+.nav-button ul li:hover svg {
+  fill: var(--clr-blue-480);
+}
 /* ===== NAV TOGGLER ===== */
 .nav-toggle {
   display: none;
@@ -32,7 +97,8 @@
   .topbar {
     display: none;
   }
-  header {
+  
+  .navbar{
     position: relative;
   }
   nav {
@@ -46,12 +112,11 @@
   .nav-collapse {
     display: none;
     position: absolute;
-    top: 70%;
+    top: 100%;
     left: 0;
     right: 0;
     width: 100%;
     flex-direction: column;
-    margin-top: 20px;
     background: var(--clr-white-100);
     z-index: 999;
   }
