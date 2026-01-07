@@ -67,6 +67,14 @@
   .newsletter form > div:last-child {
     margin-top: 24px;
   }
+  .newsletter form > div{
+    margin-bottom: 16px;
+    margin-right: 0px
+  }
+  .newsletter form button{
+    max-width: 520px;
+    width: 1000%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -80,6 +88,9 @@
     --fs-46: 32px;
     --fs-55: 38px;
     --fs-86: 48px;
+  }
+  .col-md-100{
+    width: 100%;
   }
   .eqi-card-cnt > div:last-child {
     flex-direction: column;
