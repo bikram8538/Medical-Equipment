@@ -332,13 +332,30 @@ header hr {
   justify-content: center;
   align-items: center;
 }
-.banner-image {
-  position: absolute;
-  right: -120px;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
+
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
+
+.banner-content {
+  flex: 1;
+}
+
+.banner-image {
+  flex: 1;
+  max-width: 600px;
+}
+
+.banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .banner-top{
   display: flex;
   flex-direction: column;
