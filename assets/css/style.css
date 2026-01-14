@@ -1274,4 +1274,13 @@ footer hr {
   color: var(--clr-black-000);
   text-transform: capitalize;
 }
+
+.ft-hvr{
+  transition: all 0.5s ease-in-out;
+}
+
+.ft-hvr:hover{
+  transform: scale(1.02) translateY(-1px);
+  color: var(--clr-purple-550);
+}
 /* ======= Footer End */
